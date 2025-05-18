@@ -1,5 +1,6 @@
 <?php
-
+// random 2025
+// User Model
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
