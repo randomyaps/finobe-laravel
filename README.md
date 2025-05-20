@@ -45,11 +45,13 @@ This *should* be easy if you know how to manage Composer and Laravel:
 
 <a href="https://github.com/randomyaps/finobe-laravel">Finobe Laravel</a> © 2025 by Alexander (a.k.a. RandomYaps) is licensed under the  
 <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>  
-<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em; max-height: 1em; margin-left: .2em;" alt="CC" />
-<img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em; max-height: 1em; margin-left: .2em;" alt="BY" />
-<img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="max-width: 1em; max-height: 1em; margin-left: .2em;" alt="NC" />
+<span>
+  <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="height: 20px; margin-right: 4px;">
+  <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="height: 20px; margin-right: 4px;">
+  <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" style="height: 20px;">
+</span>
 
 All HTML code belongs to Raymonf, the original creator of FINOBE.
 
-**That's all!** , See ya next time!
+**That's all!** See ya next time!
 
