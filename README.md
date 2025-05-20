@@ -43,10 +43,13 @@ This *should* be easy if you know how to manage Composer and Laravel:
 
 ## What is this licensed under?
 
-This work is licensed under a **Creative Commons Attribution-NonCommercial 4.0 International License**.  
-See [creativecommons.org/licenses/by-nc/4.0](https://creativecommons.org/licenses/by-nc/4.0/) or the LICENSE file in this repo.
+<a href="https://github.com/randomyaps/finobe-laravel">Finobe Laravel</a> © 2025 by Alexander (a.k.a. RandomYaps) is licensed under the  
+<a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>  
+<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em; max-height: 1em; margin-left: .2em;" alt="CC" />
+<img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em; max-height: 1em; margin-left: .2em;" alt="BY" />
+<img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="max-width: 1em; max-height: 1em; margin-left: .2em;" alt="NC" />
 
----
+All HTML code belongs to Raymonf, the original creator of FINOBE.
 
 **That's all!** , See ya next time!
 
