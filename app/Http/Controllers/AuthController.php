@@ -1,6 +1,6 @@
 <?php
 // random 2025
-// AuthController, Why not?
+// AuthContoller, why not?
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -10,45 +10,47 @@ use App\Models\User;
 
 class AuthController extends Controller
 {
-    public function showLogin()
+    public function showLoginForm()
     {
-        return view('auth.login');
+    return view('auth.login');
     }
+
 
     public function login(Request $request)
     {
         $credentials = $request->validate([
-            'username' => 'required|string',
+            'name' => 'required|string',
             'password' => 'required|string',
         ]);
 
-        if (Auth::attempt($credentials)) { 
-            // return the profile view.
+        if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             return redirect()->intended('/profile');
         }
 
         return back()->withErrors([
-            'username' => 'The provided credentials do not match our records.', // womp womp
-        ]);
+            'name' => 'The provided credentials do not match our records.',
+        ])->onlyInput('name');
     }
 
     public function showRegister()
     {
-        return view('auth.register'); // register is so broken
+        return view('auth.register');
     }
 
     public function register(Request $request)
     {
         $request->validate([
-            'username' => 'required|string|unique:users',
+            'name' => 'required|string|unique:users,name',
+            'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:6|confirmed',
         ]);
 
         $user = User::create([
-            'username' => $request->username,
-            'password' => Hash::make($request->password),
-        ]); // TODO: actually test this
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'password' => Hash::make($request->input('password')),
+        ]);
 
         Auth::login($user);
 
@@ -58,10 +60,9 @@ class AuthController extends Controller
     public function logout(Request $request)
     {
         Auth::logout();
-        // aw..
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
         return redirect('/login');
     }
-} 
+}
