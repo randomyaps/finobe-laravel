@@ -1,8 +1,12 @@
 <?php
+// random 2025
 // routes, very important
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
+
+// rbxapi stuff
+require __DIR__.'/rbxAPI.php';
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 // register thingy
