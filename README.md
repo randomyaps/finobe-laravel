@@ -51,7 +51,7 @@ This *should* be easy if you know how to manage Composer and Laravel:
   <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" style="height: 20px;">
 </span>
 
-All HTML code belongs to Raymonf, the original creator of FINOBE.
+All website designs and assets belongs to Raymonf, the original creator of FINOBE.
 
 **That's all!** See ya next time!
 
