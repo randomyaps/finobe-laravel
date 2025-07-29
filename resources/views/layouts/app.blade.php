@@ -1,5 +1,10 @@
 {{-- random 2025 --}}
 {{-- header --}}
+@php
+    $ProjectName = $projectName ?? 'Finobe';
+    $baseUrl = url('/')
+    $title = $ProjectName;
+@endphp
 
 <!DOCTYPE html>
 <html lang="en">
