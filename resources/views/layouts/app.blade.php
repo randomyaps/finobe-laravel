@@ -2,7 +2,7 @@
 {{-- header --}}
 @php
     $ProjectName = $projectName ?? 'Finobe';
-    $baseUrl = url('/')
+    $baseUrl = url('/');
     $title = $ProjectName;
 @endphp
 
